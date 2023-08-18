@@ -59,6 +59,26 @@ a {
     font-weight: 500;
     line-height: 1.62;
 }
+
+.section-title {
+    position: relative;
+    margin-left: 46px;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #152427;
+}
+
+.section-title::before {
+    content: "";
+    background: #152427;
+    position: absolute;
+    top: 50%;
+    left: -46px;
+    position: absolute;
+    width: 25px;
+    height: 1px;
+}
 /* Header */
 .header {
     margin: 28px 0 88px;
@@ -273,4 +293,48 @@ a {
 
 .customer__images--Agworld {
     margin-left: 11px;
+}
+
+/* Services */
+
+.services__row {
+    display: flex;
+    align-items: center;
+}
+
+.services__heading {
+    position: relative;
+    margin-top: 12px;
+    width: 520px;
+}
+
+.services__heading::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+    bottom: 19px;
+    right: 103px;
+}
+
+.controls {
+    display: flex;
+    gap: 17px;
+    margin-left: 422px;
+}
+
+.control__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    background: #e2eddf;
+}
+.control__btn:hover {
+    background: var(--primary-color);
+    color: #ffffff;
 }
