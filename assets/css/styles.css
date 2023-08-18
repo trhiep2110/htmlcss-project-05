@@ -61,20 +61,20 @@ a {
 }
 /* Header */
 .header {
-    margin-top: 28px;
+    margin: 28px 0 88px;
 }
 .header-top {
     display: flex;
     align-items: center;
 }
 
-.header-top__sticky {
+/* .header-top__sticky {
     position: sticky;
     top: 0px;
     z-index: 3;
     background: #fff;
     padding: 5px 0;
-}
+} */
 
 .navbar {
     margin-left: auto;
@@ -255,4 +255,22 @@ a {
     top: 300px;
     right: 50px;
     transform: rotate(180deg);
+}
+
+/* Customer */
+.customer {
+    padding: 42px 0 106px;
+}
+
+.customer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 77px 122px;
+    border-radius: 99px;
+    background: #e2eddf;
+}
+
+.customer__images--Agworld {
+    margin-left: 11px;
 }
