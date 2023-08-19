@@ -333,8 +333,51 @@ a {
     border-radius: 50%;
     border: none;
     background: #e2eddf;
+    cursor: pointer;
 }
 .control__btn:hover {
     background: var(--primary-color);
     color: #ffffff;
+}
+
+.services__list {
+    display: flex;
+    margin-top: 76px;
+    gap: 16px;
+}
+
+.services-item {
+    width: 370px;
+}
+
+.services-item:hover {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.services-item__img {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.services-item__caption {
+    padding: 24px 18px;
+}
+.services-item__heading {
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.services-item__desc {
+    margin-top: 18px;
+    width: 268px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
 }
