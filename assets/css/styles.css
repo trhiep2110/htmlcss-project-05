@@ -591,3 +591,124 @@ a {
     font-weight: 500;
     line-height: 1.4;
 }
+
+/* Process */
+.process {
+    margin-top: 79px;
+}
+
+.process__list {
+    margin-top: 81px;
+}
+
+.process__inner {
+    padding-top: 36px;
+}
+
+.process__heading {
+    position: relative;
+    width: 477px;
+}
+
+.process__heading::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    background: #152427;
+    bottom: 18px;
+    right: -9px;
+}
+
+.process-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 185px;
+}
+
+.process-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    left: 0px;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        #83a17d 4.17%,
+        rgba(131, 161, 125, 0) 36.46%
+    );
+}
+
+.process-item:hover {
+    border-radius: 33px;
+    background: #e2eddf;
+    transition: 0.3s;
+    transform: translateY(-16px);
+}
+
+.process-item:hover .process__link {
+    display: block;
+}
+.process-item:hover .process__picture {
+    display: block;
+    transition: 0.3s;
+}
+.process-item__number {
+    min-width: 110px;
+    margin-left: 20px;
+    color: var(--primary-color);
+    font-size: 7.2rem;
+    font-weight: 600;
+    line-height: 0.72;
+}
+
+.process-item__heading {
+    min-width: 176px;
+    margin-left: 49px;
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.process__detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.process__link {
+    display: none;
+    margin: 22px 0 0 67px;
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.process__link:hover {
+    text-decoration: underline;
+}
+
+.process-item__desc {
+    width: 572px;
+    margin-left: 175px;
+    color: #7d8188;
+    font-family: var(--font-letter);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.process__picture {
+    display: none;
+    position: absolute;
+    width: 615px;
+    height: 185px;
+    object-fit: cover;
+    margin-left: 169px;
+    bottom: 0;
+    border-radius: 33px;
+}
