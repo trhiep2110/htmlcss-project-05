@@ -394,6 +394,7 @@ a {
 }
 
 .introduce__media {
+    position: relative;
     width: 52%;
 }
 
@@ -478,4 +479,115 @@ a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.71;
+}
+
+/* introduce summary */
+.introduce-summary {
+    position: absolute;
+    padding: 19px 22px 11px;
+    width: 144px;
+    height: 144px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 7px 54px 0px rgba(154, 154, 154, 0.25);
+    bottom: 8px;
+    right: -9px;
+}
+.summary__title {
+    color: #152427;
+    font-family: var(--font-letter);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.summary__subtitle {
+    margin-top: 6px;
+    color: #575d5e;
+    font-family: var(--font-letter);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: 0.4;
+}
+
+.summary__stats {
+    margin-top: 10px;
+    color: #152427;
+    font-family: var(--font-letter);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.summary__process {
+    margin-top: 3px;
+}
+
+.summary__process--max {
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: #eaeaea;
+}
+
+.summary__process--now {
+    width: 40%;
+    height: 2px;
+    border-radius: 10px;
+    background: #83a17d;
+}
+
+.summary__load {
+    display: block;
+    text-align: right;
+    margin-top: 4px;
+    font-family: "Public Sans";
+    font-weight: 500;
+    font-size: 1rem;
+    color: #152427;
+}
+
+.summary__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eaeaea;
+}
+
+.summary__live {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #143c3c;
+}
+
+.summary__avatar {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    object-fit: cover;
+}
+
+.summary__avatar + .summary__avatar {
+    margin-left: -10px;
+}
+
+.summary__row {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary__label {
+    color: #152427;
+    font-family: var(--font-letter);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
 }
